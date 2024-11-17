@@ -1,0 +1,13 @@
+.card {
+  background-color: lightblue;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.card a {
+  display: block;
+}
+
+body {
+  background-color: lightpink;
+}

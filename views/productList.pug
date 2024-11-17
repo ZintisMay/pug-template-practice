@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', type='text/css', href='/index.css')
+  body
+    h1= title
+    div
+      each val,index in products
+        div.card= val.name + ": $" + val.price + " for " + val.size + val.measurement + " "
+            a(href="/products/" + index) Buy Now
+//-  { name: "Coffee", price: "15", size: "64", measurement: "oz" },

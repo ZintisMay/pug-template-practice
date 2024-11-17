@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    p= content
+    ul
+      each val,index in ["apple", "orange", "banana", "cherry", "watermelon"]
+        if index % 2 == 1
+            li= index + ": " + val
+    a(href='/list') Products
